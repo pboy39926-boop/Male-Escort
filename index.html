@@ -135,7 +135,7 @@
                 <a href="#home" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">Home</a>
                 <a href="#about" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">About</a>
                 <a href="#services" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">Services</a>
-                <a href="#gallery" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">Gallery</a>
+                <a href="#" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors"></a>
                 <a href="#reviews" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">Reviews</a>
                 <a href="#contact" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">Contact</a>
             </div>
@@ -155,7 +155,7 @@
             <a href="#home" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">Home</a>
             <a href="#about" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">About</a>
             <a href="#services" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">Services</a>
-            <a href="#gallery" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">Gallery</a>
+            <a href="#" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2"></a>
             <a href="#reviews" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">Reviews</a>
             <a href="#contact" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">Contact</a>
             <div class="pt-3 border-t border-neutral-800">
@@ -436,66 +436,105 @@
 </section>
 
 <!-- ===== GALLERY ===== -->
-<section id="gallery" class="py-20 md:py-28 border-t border-neutral-900">
-    <div class="max-w-6xl mx-auto px-4 md:px-6">
-        <div class="text-center max-w-2xl mx-auto mb-14">
-            <span class="anim inline-block text-xs font-medium text-orange-400 uppercase tracking-widest mb-4">My Photos</span>
-            <h2 class="anim text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tighter mb-4">Gallery</h2>
-            <p class="anim text-neutral-400 font-light text-base md:text-lg">Real photos, no filters. What you see is what you get.</p>
-        </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-            <div class="gal-img anim rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-                <img src="https://picsum.photos/seed/man-casual-1/400/533" alt="" class="w-full h-full object-cover transition-transform duration-700">
-                <div class="gal-overlay absolute inset-0 bg-orange-500/10 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <span class="iconify text-white text-2xl" data-icon="lucide:zoom-in"></span>
-                </div>
-            </div>
-            <div class="gal-img anim rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]" style="transition-delay:.05s">
-                <img src="https://picsum.photos/seed/man-formal-2/400/533" alt="" class="w-full h-full object-cover transition-transform duration-700">
-                <div class="gal-overlay absolute inset-0 bg-orange-500/10 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <span class="iconify text-white text-2xl" data-icon="lucide:zoom-in"></span>
-                </div>
-            </div>
-            <div class="gal-img anim rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]" style="transition-delay:.1s">
-                <img src="https://picsum.photos/seed/man-gym-3/400/533" alt="" class="w-full h-full object-cover transition-transform duration-700">
-                <div class="gal-overlay absolute inset-0 bg-orange-500/10 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <span class="iconify text-white text-2xl" data-icon="lucide:zoom-in"></span>
-                </div>
-            </div>
-            <div class="gal-img anim rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]" style="transition-delay:.15s">
-                <img src="https://picsum.photos/seed/man-outfit-4/400/533" alt="" class="w-full h-full object-cover transition-transform duration-700">
-                <div class="gal-overlay absolute inset-0 bg-orange-500/10 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <span class="iconify text-white text-2xl" data-icon="lucide:zoom-in"></span>
-                </div>
-            </div>
-            <div class="gal-img anim rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-                <img src="https://picsum.photos/seed/man-style-5/400/533" alt="" class="w-full h-full object-cover transition-transform duration-700">
-                <div class="gal-overlay absolute inset-0 bg-orange-500/10 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <span class="iconify text-white text-2xl" data-icon="lucide:zoom-in"></span>
-                </div>
-            </div>
-            <div class="gal-img anim rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]" style="transition-delay:.05s">
-                <img src="https://picsum.photos/seed/man-smile-6/400/533" alt="" class="w-full h-full object-cover transition-transform duration-700">
-                <div class="gal-overlay absolute inset-0 bg-orange-500/10 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <span class="iconify text-white text-2xl" data-icon="lucide:zoom-in"></span>
-                </div>
-            </div>
-            <div class="gal-img anim rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]" style="transition-delay:.1s">
-                <img src="https://picsum.photos/seed/man-look-7/400/533" alt="" class="w-full h-full object-cover transition-transform duration-700">
-                <div class="gal-overlay absolute inset-0 bg-orange-500/10 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <span class="iconify text-white text-2xl" data-icon="lucide:zoom-in"></span>
-                </div>
-            </div>
-            <div class="gal-img anim rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]" style="transition-delay:.15s">
-                <img src="https://picsum.photos/seed/man-cool-8/400/533" alt="" class="w-full h-full object-cover transition-transform duration-700">
-                <div class="gal-overlay absolute inset-0 bg-orange-500/10 opacity-0 transition-opacity duration-300 flex items-center justify-center">
-                    <span class="iconify text-white text-2xl" data-icon="lucide:zoom-in"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
+<section id="gallery" class="py-20 md:py-28 border-t border-neutral-900 bg-black text-white">
+    <div class="max-w-6xl mx-auto px-4 md:px-6">
+
+```
+    <!-- Heading -->
+    <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="anim inline-block text-xs font-medium text-orange-400 uppercase tracking-widest mb-4">
+            My Photos
+        </span>
+        <h2 class="anim text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tighter mb-4">
+            Gallery
+        </h2>
+        <p class="anim text-neutral-400 font-light text-base md:text-lg">
+            Real photos, no filters. What you see is what you get.
+        </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+
+        <!-- Item -->
+        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=400&h=533&fit=crop"
+                 alt="Casual style man"
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <span class="text-white text-2xl">+</span>
+            </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=533&fit=crop"
+                 alt="Formal suit look"
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <span class="text-white text-2xl">+</span>
+            </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=533&fit=crop"
+                 alt="Fitness lifestyle"
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <span class="text-white text-2xl">+</span>
+            </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=533&fit=crop"
+                 alt="Stylish outfit"
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <span class="text-white text-2xl">+</span>
+            </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=533&fit=crop"
+                 alt="Portrait smile"
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <span class="text-white text-2xl">+</span>
+            </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=533&fit=crop"
+                 alt="Travel lifestyle"
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <span class="text-white text-2xl">+</span>
+            </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=533&fit=crop"
+                 alt="Event party look"
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <span class="text-white text-2xl">+</span>
+            </div>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&h=533&fit=crop"
+                 alt="Long drive lifestyle"
+                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <span class="text-white text-2xl">+</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+```
+</section>
+    
 <!-- ===== REVIEWS ===== -->
 <section id="reviews" class="py-20 md:py-28 border-t border-neutral-900">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
