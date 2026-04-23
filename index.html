@@ -26,8 +26,6 @@
         .float{animation:float 3s ease-in-out infinite}
         @keyframes pulse-r{0%{transform:scale(1);opacity:1}100%{transform:scale(1.6);opacity:0}}
         .pulse-dot::before{content:'';position:absolute;inset:-4px;border-radius:9999px;border:2px solid #F97316;animation:pulse-r 2s ease-out infinite}
-        .gal-img:hover img{transform:scale(1.08)}
-        .gal-img:hover .gal-overlay{opacity:1}
         .srv:hover{border-color:rgba(249,115,22,.3);transform:translateY(-3px)}
         .nav-l{position:relative}
         .nav-l::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:#F97316;transition:width .3s}
@@ -135,7 +133,6 @@
                 <a href="#home" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">Home</a>
                 <a href="#about" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">About</a>
                 <a href="#services" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">Services</a>
-                <a href="#" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors"></a>
                 <a href="#reviews" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">Reviews</a>
                 <a href="#contact" class="nav-l text-sm font-medium text-neutral-400 hover:text-white transition-colors">Contact</a>
             </div>
@@ -155,7 +152,6 @@
             <a href="#home" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">Home</a>
             <a href="#about" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">About</a>
             <a href="#services" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">Services</a>
-            <a href="#" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2"></a>
             <a href="#reviews" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">Reviews</a>
             <a href="#contact" onclick="toggleMenu()" class="block text-sm font-medium text-neutral-400 hover:text-white py-2">Contact</a>
             <div class="pt-3 border-t border-neutral-800">
@@ -172,7 +168,6 @@
 <section id="home" class="relative min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 pt-24 pb-16 lg:pt-20 lg:pb-20 overflow-hidden">
     <div class="glow absolute inset-0 pointer-events-none"></div>
     <div class="relative z-10 max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <!-- Text -->
         <div class="text-center lg:text-left order-2 lg:order-1">
             <div class="anim inline-flex items-center gap-2 px-4 py-2 rounded-full border border-orange-500/30 bg-orange-500/10 mb-6">
                 <span class="relative w-2 h-2 rounded-full bg-orange-500 pulse-dot"></span>
@@ -182,21 +177,20 @@
                 Hi, I'm<br>Hunter
             </h1>
             <p class="anim text-base sm:text-lg md:text-xl font-light text-neutral-400 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-                For women who appreciate class, charm, and meaningful company. Whether it’s an elegant dinner, social events, travel, or simply engaging conversation - I offer a refined, respectful presence that makes every moment enjoyable.
+                For women who appreciate class, charm, and meaningful company. Whether it's an elegant dinner, social events, travel, or simply engaging conversation - I offer a refined, respectful presence that makes every moment enjoyable.
                 <br><br>
-                Well-groomed, discreet, and attentive - your perfect companion for memorable experiences.   
+                Well-groomed, discreet, and attentive - your perfect companion for memorable experiences.
             </p>
             <div class="anim flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
                 <button onclick="openBook()" class="bg-white text-black text-sm font-semibold px-8 py-3.5 rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
                     <span class="iconify" data-icon="lucide:calendar-heart"></span>
                     Book Me Now
                 </button>
-                <a href="https://wa.me/+919106420341?text=Hi, I came across your profile and I’m interested in booking your time for an upcoming occasion. Could you please share your availability and details?" target="_blank" class="border border-green-500/40 text-green-400 text-sm font-semibold px-8 py-3.5 rounded-full hover:bg-green-500 hover:text-white transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
+                <a href="https://wa.me/+919106420341?text=Hi, I came across your profile and I'm interested in booking your time for an upcoming occasion. Could you please share your availability and details?" target="_blank" class="border border-green-500/40 text-green-400 text-sm font-semibold px-8 py-3.5 rounded-full hover:bg-green-500 hover:text-white transition-all duration-300 flex items-center gap-2 w-full sm:w-auto justify-center">
                     <span class="iconify" data-icon="lucide:message-circle"></span>
                     WhatsApp
                 </a>
             </div>
-            <!-- Quick Stats -->
             <div class="anim flex items-center justify-center lg:justify-start gap-6 sm:gap-8">
                 <div class="text-center">
                     <div class="text-xl sm:text-2xl font-semibold">200+</div>
@@ -214,13 +208,11 @@
                 </div>
             </div>
         </div>
-        <!-- Photo -->
         <div class="order-1 lg:order-2 flex justify-center">
             <div class="relative">
                 <div class="hero-img-wrap w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden z-10">
                     <img src="https://picsum.photos/seed/handsome-man-portrait/600/600" alt="Your Photo" class="w-full h-full object-cover">
                 </div>
-                <!-- Floating badges -->
                 <div class="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 glass rounded-xl px-3 py-2 float z-20">
                     <div class="flex items-center gap-2">
                         <span class="iconify text-orange-500" data-icon="lucide:map-pin"></span>
@@ -233,12 +225,10 @@
                         <span class="text-xs font-medium">Verified</span>
                     </div>
                 </div>
-                <!-- Background glow -->
                 <div class="absolute inset-0 bg-orange-500/10 rounded-full blur-3xl -z-10 scale-150"></div>
             </div>
         </div>
     </div>
-    <!-- Scroll -->
     <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce">
         <span class="text-[10px] uppercase tracking-widest text-neutral-500">Scroll</span>
         <span class="iconify text-neutral-500" data-icon="lucide:chevron-down"></span>
@@ -253,7 +243,6 @@
             <h2 class="anim text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tighter mb-4">Know Me Better</h2>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
-            <!-- Details Cards -->
             <div class="lg:col-span-3 space-y-4">
                 <div class="anim bg-neutral-900 border border-neutral-800 rounded-2xl p-5 flex items-start gap-4 hover:border-orange-500/20 transition-all duration-300">
                     <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center flex-shrink-0">
@@ -292,9 +281,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Right Side - Tags + Interests -->
             <div class="lg:col-span-2 space-y-6">
-                <!-- What I Offer Tags -->
                 <div class="anim bg-neutral-900 border border-neutral-800 rounded-2xl p-5">
                     <h4 class="text-sm font-semibold mb-4">What I Offer</h4>
                     <div class="flex flex-wrap gap-2">
@@ -309,7 +296,6 @@
                         <span class="tag text-[11px] px-3 py-1.5 rounded-full border border-neutral-700 text-neutral-400 cursor-default">Long Drives</span>
                     </div>
                 </div>
-                <!-- Interests -->
                 <div class="anim bg-neutral-900 border border-neutral-800 rounded-2xl p-5">
                     <h4 class="text-sm font-semibold mb-4">My Interests</h4>
                     <div class="space-y-3">
@@ -335,7 +321,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Availability -->
                 <div class="anim bg-neutral-900 border border-neutral-800 rounded-2xl p-5">
                     <h4 class="text-sm font-semibold mb-4">Availability</h4>
                     <div class="space-y-2">
@@ -367,7 +352,6 @@
             <p class="anim text-neutral-400 font-light text-base md:text-lg">Transparent pricing, no hidden charges. What you see is what you pay.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <!-- S1 -->
             <div class="srv anim bg-neutral-900 border border-neutral-800 rounded-2xl p-6 transition-all duration-500">
                 <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-4">
                     <span class="iconify text-orange-500 text-xl" data-icon="lucide:clock"></span>
@@ -377,7 +361,6 @@
                 <div class="text-2xl font-semibold text-orange-400 mb-5">₹3,000</div>
                 <button onclick="openBook()" class="w-full border border-neutral-700 text-xs font-semibold py-2.5 rounded-xl hover:bg-white hover:text-black transition-all duration-300">Book Now</button>
             </div>
-            <!-- S2 - Popular -->
             <div class="srv anim bg-neutral-900 border border-orange-500/30 rounded-2xl p-6 transition-all duration-500 relative" style="transition-delay:.1s">
                 <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-orange-500 text-[10px] font-bold uppercase tracking-wider text-white">Most Popular</div>
                 <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-4">
@@ -388,7 +371,6 @@
                 <div class="text-2xl font-semibold text-orange-400 mb-5">₹7,000</div>
                 <button onclick="openBook()" class="w-full bg-white text-black text-xs font-semibold py-2.5 rounded-xl hover:bg-orange-500 hover:text-white transition-all duration-300">Book Now</button>
             </div>
-            <!-- S3 -->
             <div class="srv anim bg-neutral-900 border border-neutral-800 rounded-2xl p-6 transition-all duration-500" style="transition-delay:.2s">
                 <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-4">
                     <span class="iconify text-orange-500 text-xl" data-icon="lucide:sun"></span>
@@ -398,7 +380,6 @@
                 <div class="text-2xl font-semibold text-orange-400 mb-5">₹12,000</div>
                 <button onclick="openBook()" class="w-full border border-neutral-700 text-xs font-semibold py-2.5 rounded-xl hover:bg-white hover:text-black transition-all duration-300">Book Now</button>
             </div>
-            <!-- S4 -->
             <div class="srv anim bg-neutral-900 border border-neutral-800 rounded-2xl p-6 transition-all duration-500">
                 <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-4">
                     <span class="iconify text-orange-500 text-xl" data-icon="lucide:calendar"></span>
@@ -408,7 +389,6 @@
                 <div class="text-2xl font-semibold text-orange-400 mb-5">₹18,000</div>
                 <button onclick="openBook()" class="w-full border border-neutral-700 text-xs font-semibold py-2.5 rounded-xl hover:bg-white hover:text-black transition-all duration-300">Book Now</button>
             </div>
-            <!-- S5 -->
             <div class="srv anim bg-neutral-900 border border-neutral-800 rounded-2xl p-6 transition-all duration-500" style="transition-delay:.1s">
                 <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-4">
                     <span class="iconify text-orange-500 text-xl" data-icon="lucide:palm-tree"></span>
@@ -418,7 +398,6 @@
                 <div class="text-2xl font-semibold text-orange-400 mb-5">₹35,000</div>
                 <button onclick="openBook()" class="w-full border border-neutral-700 text-xs font-semibold py-2.5 rounded-xl hover:bg-white hover:text-black transition-all duration-300">Book Now</button>
             </div>
-            <!-- S6 -->
             <div class="srv anim bg-neutral-900 border border-neutral-800 rounded-2xl p-6 transition-all duration-500" style="transition-delay:.2s">
                 <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-4">
                     <span class="iconify text-orange-500 text-xl" data-icon="lucide:plane"></span>
@@ -426,7 +405,7 @@
                 <h3 class="text-base font-semibold mb-1">Travel Package</h3>
                 <p class="text-xs text-neutral-500 mb-4">Outstation trips — Goa, Manali, etc.</p>
                 <div class="text-2xl font-semibold text-orange-400 mb-5">Custom</div>
-                <a href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20a%20travel%20package%20quote" target="_blank" class="w-full border border-neutral-700 text-xs font-semibold py-2.5 rounded-xl hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center gap-2">
+                <a href="https://wa.me/+919106420341?text=Hi%2C%20I%20want%20a%20travel%20package%20quote" target="_blank" class="w-full border border-neutral-700 text-xs font-semibold py-2.5 rounded-xl hover:bg-white hover:text-black transition-all duration-300 flex items-center justify-center gap-2">
                     <span class="iconify" data-icon="lucide:message-circle"></span> Ask on WhatsApp
                 </a>
             </div>
@@ -435,106 +414,6 @@
     </div>
 </section>
 
-<!-- ===== GALLERY ===== -->
-
-<section id="gallery" class="py-20 md:py-28 border-t border-neutral-900 bg-black text-white">
-    <div class="max-w-6xl mx-auto px-4 md:px-6">
-
-```
-    <!-- Heading -->
-    <div class="text-center max-w-2xl mx-auto mb-14">
-        <span class="anim inline-block text-xs font-medium text-orange-400 uppercase tracking-widest mb-4">
-            My Photos
-        </span>
-        <h2 class="anim text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tighter mb-4">
-            Gallery
-        </h2>
-        <p class="anim text-neutral-400 font-light text-base md:text-lg">
-            Real photos, no filters. What you see is what you get.
-        </p>
-    </div>
-
-    <!-- Grid -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-
-        <!-- Item -->
-        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=400&h=533&fit=crop"
-                 alt="Casual style man"
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span class="text-white text-2xl">+</span>
-            </div>
-        </div>
-
-        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=533&fit=crop"
-                 alt="Formal suit look"
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span class="text-white text-2xl">+</span>
-            </div>
-        </div>
-
-        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=533&fit=crop"
-                 alt="Fitness lifestyle"
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span class="text-white text-2xl">+</span>
-            </div>
-        </div>
-
-        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=533&fit=crop"
-                 alt="Stylish outfit"
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span class="text-white text-2xl">+</span>
-            </div>
-        </div>
-
-        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=533&fit=crop"
-                 alt="Portrait smile"
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span class="text-white text-2xl">+</span>
-            </div>
-        </div>
-
-        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=533&fit=crop"
-                 alt="Travel lifestyle"
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span class="text-white text-2xl">+</span>
-            </div>
-        </div>
-
-        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=533&fit=crop"
-                 alt="Event party look"
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span class="text-white text-2xl">+</span>
-            </div>
-        </div>
-
-        <div class="group rounded-2xl overflow-hidden relative cursor-pointer aspect-[3/4]">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&h=533&fit=crop"
-                 alt="Long drive lifestyle"
-                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-orange-500/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                <span class="text-white text-2xl">+</span>
-            </div>
-        </div>
-
-    </div>
-</div>
-```
-</section>
-    
 <!-- ===== REVIEWS ===== -->
 <section id="reviews" class="py-20 md:py-28 border-t border-neutral-900">
     <div class="max-w-6xl mx-auto px-4 md:px-6">
@@ -625,12 +504,8 @@
             <span class="text-xs font-medium text-orange-400 uppercase tracking-widest">Ready?</span>
         </div>
         <h2 class="anim text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tighter mb-5">Don't Be Shy,<br>I'm Just a Message Away</h2>
-        <p class="anim text-neutral-400 font-light text-base md:text-lg leading-relaxed mb-10">Be it a special occasion, a social event, or just a desire for quality time with great company, I’m here to make every moment count. With a friendly, easy-going nature and attention to detail, I aim to create a comfortable and enjoyable atmosphere. Discretion and respect are always a priority, so you can fully relax and be yourself. Let’s create experiences that feel natural, meaningful, and memorable.</p>
+        <p class="anim text-neutral-400 font-light text-base md:text-lg leading-relaxed mb-10">Be it a special occasion, a social event, or just a desire for quality time with great company, I'm here to make every moment count. With a friendly, easy-going nature and attention to detail, I aim to create a comfortable and enjoyable atmosphere. Discretion and respect are always a priority, so you can fully relax and be yourself. Let's create experiences that feel natural, meaningful, and memorable.</p>
         <div class="anim flex flex-col sm:flex-row items-center justify-center gap-4">
-            <!--<button onclick="openBook()" class="bg-white text-black text-sm font-semibold px-8 py-3.5 rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300 flex items-center gap-2">
-                <span class="iconify" data-icon="lucide:calendar-heart"></span>
-                Book Me Now
-            </button>-->
             <a href="https://wa.me/+919106420341?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20services" target="_blank" class="border border-green-500/40 text-green-400 text-sm font-semibold px-8 py-3.5 rounded-full hover:bg-green-500 hover:text-white transition-all duration-300 flex items-center gap-2">
                 <span class="iconify" data-icon="lucide:message-circle"></span>
                 Chat on WhatsApp
@@ -657,15 +532,6 @@
                             <div class="text-sm font-medium group-hover:text-green-400 transition-colors">+91 91064 20341</div>
                         </div>
                     </a>
-                    <!--<a href="pboy39926@gmail.com" class="flex items-center gap-4 group">
-                        <div class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/20 transition-all">
-                            <span class="iconify text-orange-500 text-xl" data-icon="lucide:mail"></span>
-                        </div>
-                        <div>
-                            <div class="text-xs text-neutral-500 mb-0.5">Email</div>
-                            <div class="text-sm font-medium group-hover:text-orange-400 transition-colors">pboy39926@gmail.com</div>
-                        </div>-->
-                    </a>
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center flex-shrink-0">
                             <span class="iconify text-orange-500 text-xl" data-icon="lucide:map-pin"></span>
@@ -676,7 +542,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Social -->
                 <div class="mt-8 pt-8 border-t border-neutral-800">
                     <div class="text-xs text-neutral-500 mb-3 uppercase tracking-widest">My Social</div>
                     <div class="flex items-center gap-3">
@@ -695,29 +560,28 @@
                     </div>
                 </div>
             </div>
-            <!-- Quick Message Form -->
             <div class="anim-r">
                 <form id="msgForm" onsubmit="sendMsg(event)" class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 md:p-8 space-y-4 h-fit">
-                <h3 class="text-lg font-semibold tracking-tight mb-1">Quick Message</h3>
-                <p class="text-xs text-neutral-500 mb-4">This will be sent to my WhatsApp directly.</p>
-                <input id="qName" type="text" required placeholder="Your Name" class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-sm placeholder:text-neutral-600 transition-all duration-300">
-                <input id="qPhone" type="tel" required placeholder="Your Phone / WhatsApp" class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-sm placeholder:text-neutral-600 transition-all duration-300">
-                <select id="qService" class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-sm transition-all duration-300">
-                      <option>What are you looking for?</option>
-                      <option>Dinner Date</option>
-                      <option>Party / Club</option>
-                      <option>Travel / Trip</option>
-                      <option>Event / Wedding</option>
-                      <option>Just Company</option>
-                      <option>Other</option>
-                </select>
-        <textarea id="qMsg" rows="3" required placeholder="Tell me about yourself and what you have in mind..." class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-sm placeholder:text-neutral-600 transition-all duration-300 resize-none"></textarea>
-        <button type="submit" class="w-full bg-green-500 text-white text-sm font-semibold py-3.5 rounded-xl hover:bg-green-600 transition-all duration-300 flex items-center justify-center gap-2">
-            <span class="iconify" data-icon="lucide:message-circle"></span>
-            Send via WhatsApp
-        </button>
-    </form>
-</div>
+                    <h3 class="text-lg font-semibold tracking-tight mb-1">Quick Message</h3>
+                    <p class="text-xs text-neutral-500 mb-4">This will be sent to my WhatsApp directly.</p>
+                    <input id="qName" type="text" required placeholder="Your Name" class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-sm placeholder:text-neutral-600 transition-all duration-300">
+                    <input id="qPhone" type="tel" required placeholder="Your Phone / WhatsApp" class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-sm placeholder:text-neutral-600 transition-all duration-300">
+                    <select id="qService" class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-sm transition-all duration-300">
+                        <option>What are you looking for?</option>
+                        <option>Dinner Date</option>
+                        <option>Party / Club</option>
+                        <option>Travel / Trip</option>
+                        <option>Event / Wedding</option>
+                        <option>Just Company</option>
+                        <option>Other</option>
+                    </select>
+                    <textarea id="qMsg" rows="3" required placeholder="Tell me about yourself and what you have in mind..." class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-sm placeholder:text-neutral-600 transition-all duration-300 resize-none"></textarea>
+                    <button type="submit" class="w-full bg-green-500 text-white text-sm font-semibold py-3.5 rounded-xl hover:bg-green-600 transition-all duration-300 flex items-center justify-center gap-2">
+                        <span class="iconify" data-icon="lucide:message-circle"></span>
+                        Send via WhatsApp
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -804,7 +668,7 @@
 let mO=false;
 function toggleMenu(){mO=!mO;const m=document.getElementById('mobMenu'),i=document.getElementById('menuIco');if(mO){m.classList.remove('hidden');i.setAttribute('data-icon','lucide:x')}else{m.classList.add('hidden');i.setAttribute('data-icon','lucide:menu')}}
 
-// Modal — style.display use kar rahe, 100% reliable
+// Modal
 function openBook(){document.getElementById('bookModal').style.display='flex';document.body.style.overflow='hidden'}
 function closeBook(){document.getElementById('bookModal').style.display='none';document.body.style.overflow=''}
 
@@ -814,7 +678,7 @@ function formatDate(d){
     return p[2] + '-' + p[1] + '-' + p[0];
 }
 
-// Booking form → WhatsApp with full details
+// Booking form → WhatsApp
 function sendBook(e){
     e.preventDefault();
     const name = document.getElementById('bName').value;
